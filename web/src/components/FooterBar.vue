@@ -1,11 +1,11 @@
 <template>
   <div class="foot-container">
     <div class="footer">
-      Powered by {{ author }} @
-      <el-link type="primary" href="https://github.com/yangjian102621/chatgpt-plus" target="_blank" style="--el-link-text-color:#ffffff">
-        {{ title }} -
-        {{ version }}
-      </el-link>
+      Powered by {{ author }}
+<!--      <el-link type="primary" href="https://github.com/yangjian102621/chatgpt-plus" target="_blank" style="&#45;&#45;el-link-text-color:#ffffff">-->
+<!--        {{ title }} - -->
+<!--        {{ version }}-->
+<!--      </el-link>-->
     </div>
   </div>
 </template>
@@ -13,9 +13,9 @@
 
 import {ref} from "vue";
 
-const title = ref(process.env.VUE_APP_TITLE)
-const version = ref(process.env.VUE_APP_VERSION)
-const author = ref('极客学长')
+// const title = ref(process.env.VUE_APP_TITLE)
+// const version = ref(process.env.VUE_APP_VERSION)
+const author = ref('一直在追')
 </script>
 
 <style scoped lang="stylus">

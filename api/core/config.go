@@ -25,7 +25,7 @@ func NewDefaultConfig() *types.AppConfig {
 		ProxyURL:  "",
 		StaticDir: "./static",
 		StaticUrl: "http://localhost/5678/static",
-		Redis:     types.RedisConfig{Host: "localhost", Port: 6379, Password: ""},
+		Redis:     types.RedisConfig{Host: "8.137.124.249", Port: 6379, Password: ""},
 		Session: types.Session{
 			SecretKey: utils.RandString(64),
 			MaxAge:    86400,
