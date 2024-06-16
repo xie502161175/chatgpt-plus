@@ -16,16 +16,16 @@ services:
 #      - ./logs/mysql:/var/log/mysql
 #      - ./data/mysql/init.d:/docker-entrypoint-initdb.d/
 #
-  # redis
-  geekai-redis:
-    image: redis:6.0.16
-    restart: always
-    container_name: geekai-redis
-    command: redis-server --requirepass 12345678
-    volumes :
-      - ./data/redis:/data
-    ports:
-      - "6380:6379"
+#  # redis
+#  geekai-redis:
+#    image: redis:6.0.16
+#    restart: always
+#    container_name: geekai-redis
+#    command: redis-server --requirepass 12345678
+#    volumes :
+#      - ./data/redis:/data
+#    ports:
+#      - "6380:6379"
 #
 #  xxl-job-admin:
 #    container_name: geekai-xxl-job-admin
@@ -56,9 +56,9 @@ services:
     image: registry.cn-shenzhen.aliyuncs.com/geekmaster/geekai-api:v4.0.6-amd64
     container_name: geekai-api
     restart: always
-    depends_on:
+#    depends_on:
 #      - geekai-mysql
-      - geekai-redis
+#      - geekai-redis
     environment:
       - DEBUG=false
       - LOG_LEVEL=info

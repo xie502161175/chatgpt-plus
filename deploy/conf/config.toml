@@ -1,6 +1,6 @@
 Listen = "0.0.0.0:5678"
 ProxyURL = ""
-MysqlDns = "root:12345678@tcp(geekai-mysql:3306)/chatgpt_plus?charset=utf8mb4&collation=utf8mb4_unicode_ci&parseTime=True&loc=Local"
+MysqlDns = "bigdata:Xie@199012@tcp(8.137.124.249:3306)/chatgpt_plus?charset=utf8mb4&parseTime=True&loc=Local"
 StaticDir = "./static"
 StaticUrl = "/static"
 WeChatBot = false
@@ -14,9 +14,9 @@ WeChatBot = false
   MaxAge = 8640000
 
 [Redis]
-  Host = "geekai-redis"
+  Host = "8.137.124.249"
   Port = 6379
-  Password = "12345678"
+  Password = ""
   DB = 0
 
 [ApiConfig]
